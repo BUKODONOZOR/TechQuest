@@ -24,17 +24,5 @@ public class TechQuestApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		// Crear una nueva habilidad (Skill)
-		Skill skill = new Skill();
-		skill.setName("Java Programming");
-		skill.setType(TECHNOLOGY);
-		skill.setDescription("Skill for developing applications in Java.");
-
-		// Guardar la habilidad en la base de datos
-		skillRepository.save(skill);
-
-		// Consultar todas las habilidades en la base de datos
-		List<Skill> skills = skillRepository.findAll();
-		skills.forEach(System.out::println);
 	}
 }
