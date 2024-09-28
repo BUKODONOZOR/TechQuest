@@ -1,5 +1,6 @@
 package com.TechQuest.TechQuest.persistence.mysql.entity;
 
+import com.TechQuest.TechQuest.persistence.mysql.key.UserSkillKey;
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 
